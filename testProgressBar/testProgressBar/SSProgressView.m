@@ -20,8 +20,8 @@
         
         startAngle = M_PI * 1.5;
         endAngle = startAngle + (M_PI * 2);
-        
     }
+    
     return self;
 }
 
