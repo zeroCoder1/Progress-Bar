@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SSProgressView : UIView{
+    
     CGFloat startAngle;
     CGFloat endAngle;
 }

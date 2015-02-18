@@ -11,8 +11,8 @@
 @implementation SSProgressView
 
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame{
+    
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
@@ -25,21 +25,21 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect
-{
+- (void)drawRect:(CGRect)rect{
+    
     NSString* textContent = [NSString stringWithFormat:@"%d", self.percent];
     
     UIBezierPath* bezierPath = [UIBezierPath bezierPath];
     bezierPath.lineCapStyle = kCGLineCapRound;
-    bezierPath.lineJoinStyle = kCGLineJoinRound;    // Create our arc, with the correct angles
+    bezierPath.lineJoinStyle = kCGLineJoinRound;
     [bezierPath addArcWithCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)
-                          radius:130
+                          radius:75
                       startAngle:startAngle
                         endAngle:(endAngle - startAngle) * (_percent / 100.0) + startAngle
                        clockwise:YES];
     
-    bezierPath.lineWidth = 20;
-    [[UIColor redColor] setStroke];
+    bezierPath.lineWidth = 10;
+    [[UIColor blueColor] setStroke];
     [bezierPath stroke];
     
     
