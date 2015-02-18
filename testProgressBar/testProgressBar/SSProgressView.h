@@ -15,7 +15,7 @@
 }
 
 
-@property (nonatomic) int percent;
+@property (nonatomic) float percent;
 @property (nonatomic) NSString *textContent;
 @property (nonatomic, strong) UIColor *color;
 

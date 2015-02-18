@@ -35,8 +35,8 @@
 - (void)letTheProgressBegin
 {
     if (progressView.percent < 100) {
-        progressView.percent = progressView.percent + 1.0;
-        progressView.textContent = [NSString stringWithFormat:@"%d", progressView.percent];
+        progressView.percent = progressView.percent + 0.25;
+        progressView.textContent = [NSString stringWithFormat:@"%.0f", progressView.percent];
         [progressView setNeedsDisplay];
         
     }else{
