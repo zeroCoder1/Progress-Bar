@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3989D8D71A94562D00498190 /* IMG_0061.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3989D8D61A94562D00498190 /* IMG_0061.PNG */; };
 		399FAA9A1A944D85006595E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 399FAA991A944D85006595E7 /* main.m */; };
 		399FAA9D1A944D85006595E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 399FAA9C1A944D85006595E7 /* AppDelegate.m */; };
 		399FAAA01A944D85006595E7 /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 399FAA9F1A944D85006595E7 /* SSViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3989D8D61A94562D00498190 /* IMG_0061.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0061.PNG; sourceTree = "<group>"; };
 		399FAA941A944D84006595E7 /* testProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399FAA981A944D85006595E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		399FAA991A944D85006595E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		399FAA971A944D85006595E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3989D8D61A94562D00498190 /* IMG_0061.PNG */,
 				399FAA981A944D85006595E7 /* Info.plist */,
 				399FAA991A944D85006595E7 /* main.m */,
 			);
@@ -206,6 +209,7 @@
 			files = (
 				399FAAA31A944D85006595E7 /* Main.storyboard in Resources */,
 				399FAAA81A944D85006595E7 /* LaunchScreen.xib in Resources */,
+				3989D8D71A94562D00498190 /* IMG_0061.PNG in Resources */,
 				399FAAA51A944D85006595E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
