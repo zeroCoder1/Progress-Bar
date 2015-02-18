@@ -18,10 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    progressView= [[SSProgressView alloc] initWithFrame:self.view.bounds];
-    progressView.percent = 0;
-    progressView.color = [UIColor redColor];
-    [self.view addSubview:progressView];
+    _progressView= [[SSProgressView alloc] initWithFrame:self.view.bounds];
+    _progressView.percent = 0;
+    _progressView.color = [UIColor blueColor];
+    [self.view addSubview:_progressView];
 }
 
 
@@ -34,21 +34,21 @@
 
 - (void)letTheProgressBegin
 {
-    if (progressView.percent < 100) {
-        progressView.percent = progressView.percent + 0.25;
-        progressView.textContent = [NSString stringWithFormat:@"%.0f", progressView.percent];
-        [progressView setNeedsDisplay];
+    if (_progressView.percent < 100) {
+        _progressView.percent = _progressView.percent + 0.25;
+        _progressView.textContent = [NSString stringWithFormat:@"%.0f", _progressView.percent];
+        [_progressView setNeedsDisplay];
         
     }else{
-        progressView.textContent = @"Done";
-        [progressView setNeedsDisplay];
+        _progressView.textContent = @"Done";
+        [self.progressView setNeedsDisplay];
 
         [displayLink invalidate];
 
     }
-   
-   
+
 }
+
 
 
 

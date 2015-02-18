@@ -10,12 +10,13 @@
 #import "SSProgressView.h"
 
 @interface SSViewController : UIViewController{
-    SSProgressView *progressView;
-   // NSTimer *timer;
+
+
     
     CADisplayLink *displayLink;
 }
 
+@property (nonatomic, strong) SSProgressView * progressView;
 
 @end
 
