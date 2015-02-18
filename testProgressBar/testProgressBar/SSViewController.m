@@ -26,7 +26,9 @@
 
 - (void)viewDidAppear:(BOOL)animated{
 
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(letTheProgressBegin) userInfo:nil repeats:YES];
+    //timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(letTheProgressBegin) userInfo:nil repeats:YES];
+    displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(letTheProgressBegin)];
+    [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
 - (void)letTheProgressBegin
@@ -39,6 +41,9 @@
         [timer invalidate];
         timer = nil;
     }
+    
+    
+   
 }
 
 
