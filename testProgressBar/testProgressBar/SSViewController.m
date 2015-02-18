@@ -20,6 +20,7 @@
     
     progressView= [[SSProgressView alloc] initWithFrame:self.view.bounds];
     progressView.percent = 0;
+    progressView.color = [UIColor redColor];
     [self.view addSubview:progressView];
 }
 
@@ -35,14 +36,17 @@
 {
     if (progressView.percent < 100) {
         progressView.percent = progressView.percent + 1.0;
+        progressView.textContent = [NSString stringWithFormat:@"%d", progressView.percent];
         [progressView setNeedsDisplay];
+        
+    }else{
+        progressView.textContent = @"Done";
+        [progressView setNeedsDisplay];
+
+        [displayLink invalidate];
+
     }
-    else {
-        [timer invalidate];
-        timer = nil;
-    }
-    
-    
+   
    
 }
 

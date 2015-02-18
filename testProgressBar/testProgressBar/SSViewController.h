@@ -11,7 +11,7 @@
 
 @interface SSViewController : UIViewController{
     SSProgressView *progressView;
-    NSTimer *timer;
+   // NSTimer *timer;
     
     CADisplayLink *displayLink;
 }

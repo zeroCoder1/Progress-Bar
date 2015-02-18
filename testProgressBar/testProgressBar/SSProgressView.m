@@ -27,7 +27,6 @@
 
 - (void)drawRect:(CGRect)rect{
     
-    NSString* textContent = [NSString stringWithFormat:@"%d", self.percent];
     
     UIBezierPath* bezierPath = [UIBezierPath bezierPath];
     bezierPath.lineCapStyle = kCGLineCapRound;
@@ -38,8 +37,8 @@
                         endAngle:(endAngle - startAngle) * (_percent / 100.0) + startAngle
                        clockwise:YES];
     
-    bezierPath.lineWidth = 10;
-    [[UIColor blueColor] setStroke];
+    bezierPath.lineWidth = 3;
+    [_color setStroke];
     [bezierPath stroke];
     
     
@@ -50,9 +49,9 @@
     NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
     textStyle.alignment = NSTextAlignmentCenter;
     
-    NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"Helvetica-Bold" size: 42.5], NSForegroundColorAttributeName: UIColor.blackColor, NSParagraphStyleAttributeName: textStyle};
+    NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"HelveticaNeue" size: 28], NSForegroundColorAttributeName: UIColor.blackColor, NSParagraphStyleAttributeName: textStyle};
 
-    [textContent drawInRect:textRect withAttributes:textFontAttributes];
+    [_textContent drawInRect:textRect withAttributes:textFontAttributes];
 }
 
 @end
