@@ -34,7 +34,7 @@
     [bezierPath addArcWithCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)
                           radius:75
                       startAngle:startAngle
-                        endAngle:(endAngle - startAngle) * (_percent / 100.0) + startAngle
+                        endAngle:(endAngle - startAngle) * (_progress / 100.0) + startAngle
                        clockwise:YES];
     
     bezierPath.lineWidth = 3;

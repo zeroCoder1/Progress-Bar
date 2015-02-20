@@ -15,7 +15,7 @@
 }
 
 
-@property (nonatomic) float percent;
+@property (nonatomic) float progress;
 @property (nonatomic) NSString *textContent;
 @property (nonatomic, strong) UIColor *color;
 
