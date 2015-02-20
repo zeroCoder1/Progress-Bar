@@ -32,8 +32,8 @@
     [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
-- (void)letTheProgressBegin
-{
+- (void)letTheProgressBegin{
+    
     if (_progressView.progress < 100) {
         _progressView.progress = _progressView.progress + 0.25;
         _progressView.textContent = [NSString stringWithFormat:@"%.0f", _progressView.progress];
@@ -43,7 +43,6 @@
         _progressView.textContent = @"Done";
         [self.progressView setNeedsDisplay];
         [displayLink invalidate];
-
     }
 
 }

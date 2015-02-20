@@ -10,8 +10,6 @@
 #import "SSProgressView.h"
 
 @interface SSViewController : UIViewController{
-
-
     
     CADisplayLink *displayLink;
 }
